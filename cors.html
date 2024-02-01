@@ -10,4 +10,20 @@ xhttp.open("GET", "https://dev-hac.beaverztech.com/api/project/project_access/?l
 xhttp.withCredentials=true;
 xhttp.send();
 </script>
+	<script>
+    function handleResponse(response) {
+      // Handle the response data here
+      console.log(response);
+    }
+
+    function makeRequest() {
+      var script = document.createElement("script");
+      script.src =
+        "https://dev-hac.beaverztech.com/api/project/project_access/?loggedinuser=59&plant=18&sort=desc&state=published,non&duration=week&username=poiuy@gmail.com&callback=handleResponse";
+      document.body.appendChild(script);
+    }
+  </script>
+  <body>
+    <button onclick="makeRequest()">Make Request</button>
+  </body>
 </html>
