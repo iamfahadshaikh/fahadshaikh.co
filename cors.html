@@ -1,3 +1,29 @@
+<!DOCTYPE html>
+<html>
+  <body>
+    <script>
+      function handleResponse(data) {
+        console.log(data);
+      }
+
+      // Create a script element
+      var script = document.createElement("script");
+
+      // Set the script source URL with the appropriate callback function
+      script.src =
+        "https://dev-hac.beaverztech.com/api/customer-account/user/59?username=poiuy@gmail.com&callback=handleResponse";
+
+      // Add an event listener to handle errors
+      script.addEventListener("error", function (error) {
+        console.error("Error loading script:", error);
+      });
+
+      // Append the script element to the document head
+      document.head.appendChild(script);
+    </script>
+  </body>
+</html>
+
 <!-- <!DOCTYPE html>
 <html>
 <script>
@@ -14,7 +40,8 @@ xhttp.send();
 </script>
 </html>
  -->
-
+<!-- 
+ye kaam kiya but error bhi nahi diya
  <!DOCTYPE html>
 <html>
   <body>
@@ -30,3 +57,6 @@ xhttp.send();
     </script>
   </body>
 </html>
+ -->
+
+ 
