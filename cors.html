@@ -3,16 +3,13 @@
 <script>
 var xhttp = new XMLHttpRequest();
 xhttp.onreadystatechange = function() {
-	if (this.readyState == 4 && this.status == 200) {
-		alert(xhttp.responseText);
-	}
+    if (this.readyState == 4 && this.status == 200) {
+        alert(xhttp.responseText);
+    }
 };
 xhttp.open("GET", "https://otvshbvferch.com", true);
-xhttp.setRequest("https://otvshbvferch.com.fahadshaikh.co");
-xhttp.setOrigin("https://dev-hac.beaverztech.com");
-xhttp.setRequestHeader("Access-Control-Allow-Origin","*");
-
-xhttp.withCredentials=true;
+xhttp.setRequestHeader("Origin", "https://otvshbvferch.com.fahadshaikh.co");
+xhttp.withCredentials = true;
 xhttp.send();
 </script>
 </html>
